@@ -1,0 +1,250 @@
+/* Main styles for the extension */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  direction: rtl;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+}
+
+/* App container */
+.app-container {
+  width: 380px;
+  min-height: 500px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.app-header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Content */
+.app-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Form styles */
+.product-search {
+  margin-bottom: 20px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product-search h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc2626;
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+/* Product details */
+.product-details {
+  margin-top: 16px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+  font-size: 16px;
+  padding: 12px 16px;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1e3a8a;
+}
+
+.product-card {
+  padding: 16px;
+}
+
+.product-image {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 4px;
+  max-height: 200px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+}
+
+.product-id, 
+.product-description,
+.product-price,
+.product-status,
+.product-dimensions,
+.product-material,
+.product-colors {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.product-description {
+  color: #4b5563;
+}
+
+.price-label {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.price-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #047857;
+}
+
+.in-stock {
+  color: #047857;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.back-button {
+  margin-top: 16px;
+  background-color: #4b5563;
+}
+
+.back-button:hover {
+  background-color: #6b7280;
+}
+
+/* Recent products */
+.recent-products {
+  margin-top: 20px;
+}
+
+.recent-products h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-item {
+  margin-bottom: 10px;
+}
+
+.product-button {
+  width: 100%;
+  text-align: right;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 12px;
+  transition: all 0.2s;
+}
+
+.product-button:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.product-id {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.loading, .no-recent {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+} 
