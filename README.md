@@ -1,8 +1,8 @@
 # افزونه API Requester
 
 افزونه‌ای ساده و کاربردی برای مرورگر کروم جهت ارسال و مدیریت درخواست‌های API.
+![image](https://github.com/user-attachments/assets/014d7d57-53cf-44d7-aaf4-fa07a5f1dabe)
 
-![API Requester](/screenshots/screenshot.png)
 
 ## ویژگی‌ها
 
